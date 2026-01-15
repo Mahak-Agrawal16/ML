@@ -1,4 +1,9 @@
-students={"mahak":80, "doll":85, "duggu":90}
-for name,marks in students.items():
-    if marks>82:
-        print(name,marks)
+n=int(input("enter number of students: "))
+students={}
+for i in range(n):
+    name= input("Enter name: ")
+    marks= int(input("Enter marks: "))
+    students[name]= marks
+    for name,marks in students.items():
+        if marks>75:
+            print(name,marks)

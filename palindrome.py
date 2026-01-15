@@ -1,0 +1,10 @@
+n=int(input("eneter number: "))
+temp=n
+rev=0
+while n>0:
+    rev= rev*10 + n%10
+    n//=10
+    if temp == rev:
+        print("palindrome")
+    else:
+        print("not palindrome")
